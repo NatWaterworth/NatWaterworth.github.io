@@ -3,6 +3,29 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+document.addEventListener("DOMContentLoaded", () => {
+    let currentSlide = 0;
+    const images = document.querySelectorAll(".carousel-image");
+
+    function changeSlide(direction) {
+        images[currentSlide].classList.remove("active");
+        currentSlide = (currentSlide + direction + images.length) % images.length;
+        images[currentSlide].classList.add("active");
+    }
+
+    // Initialize first image
+    images[currentSlide].classList.add("active");
+
+    // Attach event listeners to buttons if they exist
+    const prevButton = document.querySelector(".prev");
+    const nextButton = document.querySelector(".next");
+
+    if (prevButton && nextButton) {
+        prevButton.addEventListener("click", () => changeSlide(-1));
+        nextButton.addEventListener("click", () => changeSlide(1));
+    }
+});
+
 
 (function($) {
 

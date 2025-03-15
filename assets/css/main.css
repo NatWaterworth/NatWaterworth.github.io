@@ -7,6 +7,8 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -71,6 +73,7 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
+
 
 /* Basic */
 
@@ -3786,10 +3789,16 @@ input, select, textarea {
 				margin-top: -2rem;
 			}
 
-			#main > .post header.major > h1, #main > .post header.major h2 {
+			#main > .post header.major > h1 {
 				font-size: 4rem;
 				line-height: 1.1;
 				margin: 0 0 2rem 0;
+			}
+			
+			#main > .post header.major > h2 {
+				font-size: 2.6rem; /* Slightly smaller than h1 */
+				line-height: 1.2;
+				margin: 0 0 1.5rem 0;
 			}
 
 			#main > .post.featured {
