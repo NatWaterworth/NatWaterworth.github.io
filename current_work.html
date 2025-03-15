@@ -69,7 +69,8 @@
                 </section>
                 <section class="posts">									
                     <article>
-                        <a class="image fit"><img src="images/Document_Variety_Showcase_2.gif" alt="" /></a></article>		
+                        <a class="image fit"><img src="images/Document_Variety_Showcase_2.gif" alt="" /></a>
+                    </article>		
                     <article>
                         <header></header>
                             <h3>Document Generator</h3>
@@ -84,24 +85,28 @@
                     </article>	
                     <article>
                         <a class="image fit"><img src="images/Document_Showcase.gif" alt="" /></a>
-                    </article>		
-                    
+                    </article>		                   
+           
                     <article>
-                        <a class="image fit"><img src="images/complex_table_example_inkscape.png" alt="" /></a>
-                        <a class="image fit"><img src="images/complex_table_example.png" alt="" /></a>
+                        <header>
+                            <h3>Document Deformations & Text Distortions</h3>
+                        </header>
+                            
+                        <a class="image fit"><img src="images/Document_Variety_Showcase_1.gif" alt="" /></a>
+                        <p>Implemented a system to simulate real-world document wear and tear, ensuring ML models are trained on realistic variations. These deformations impact both document appearance and annotation accuracy:</p>
+                        
                     </article>		
-                        <article>
-                            <header>
-                                <h3>SVG Import Pipeline & Complex Tables</h3>
-                            </header>
-                            <p>Developed an advanced SVG import pipeline, allowing seamless document design integration from vector-based tools like Inkscape and Adobe Illustrator. This workflow enables:</p>
-                            <ul>
-                                <li><strong>Automated Template Conversion</strong> – Transforms user-created SVG templates into structured Unity prefabs, supporting automated data population through XML and JSON.</li>
-                                <li><strong>Multi-Document Batch Processing</strong> – Streamlines large-scale dataset generation by automating document creation, reducing manual effort while improving efficiency.</li>
-                                <li><strong>Complex Table Generation</strong> – Designed a table system supporting multi-row and multi-column structures, enabling the recreation of invoices, purchase orders, and government forms with realistic variations.</li>
-                                <li><strong>Scalability for Large Datasets</strong> – Enhances dataset scalability by ensuring consistent document generation across multiple formats and styles.</li>
-                            </ul>
-                        </article>		
+                    <article>
+                        <ul>
+                            <li><strong>Physical Deformations</strong> – Simulated document folds, creases, and warping effects, causing text to curve and shift, testing OCR resilience to real-world distortions.</li>
+                            <li><strong>Perforations & Holes</strong> – Integrated punched holes and document tears, obstructing portions of text and challenging annotation alignment.</li>
+                            <li><strong>Stains & Dirt Marks</strong> – Added water stains, ink smudges, and dirt marks to obscure text areas, evaluating how models handle text occlusion.</li>
+                            <li><strong>Faded & Blurred Text</strong> – Applied fading, ink bleed, and Gaussian blur to simulate aging or poor-quality printing, distorting character edges.</li>
+                            <li><strong>Annotation Impact</strong> – Ensured bounding boxes and segmentation masks adapt dynamically to distortions, improving dataset accuracy for real-world OCR training.</li>
+                        </ul> 
+                        <p>By incorporating these factors, the dataset improves model robustness, enabling AI to handle imperfect, real-world documents.</p>
+                    
+                    </article>		
                     <article>
                         <header>
                             <h3>Dataset Deployments</h3>
@@ -132,26 +137,24 @@
                                 <li><strong>Camera Properties</strong> – Customizable resolution, angle, focal point, cropping, and rotation settings to replicate variations in document scans, photos, and captures.</li>
                             </ul>
                         </article>	
-                        <article>
-                            <ul>
-                                <li><strong>Physical Deformations</strong> – Simulated document folds, creases, and warping effects, causing text to curve and shift, testing OCR resilience to real-world distortions.</li>
-                                <li><strong>Perforations & Holes</strong> – Integrated punched holes and document tears, obstructing portions of text and challenging annotation alignment.</li>
-                                <li><strong>Stains & Dirt Marks</strong> – Added water stains, ink smudges, and dirt marks to obscure text areas, evaluating how models handle text occlusion.</li>
-                                <li><strong>Faded & Blurred Text</strong> – Applied fading, ink bleed, and Gaussian blur to simulate aging or poor-quality printing, distorting character edges.</li>
-                                <li><strong>Annotation Impact</strong> – Ensured bounding boxes and segmentation masks adapt dynamically to distortions, improving dataset accuracy for real-world OCR training.</li>
-                            </ul> 
-                            <p>By incorporating these factors, the dataset improves model robustness, enabling AI to handle imperfect, real-world documents.</p>
-                        
-                        </article>	
+                       
                         <article>
                             <header>
-                                <h3>Document Deformations & Text Distortions</h3>
+                                <h3>SVG Import Pipeline & Complex Tables</h3>
                             </header>
-                                
-                            <a class="image fit"><img src="images/Document_Variety_Showcase_1.gif" alt="" /></a>
-                            <p>Implemented a system to simulate real-world document wear and tear, ensuring ML models are trained on realistic variations. These deformations impact both document appearance and annotation accuracy:</p>
-                            
+                            <p>Developed an advanced SVG import pipeline, allowing seamless document design integration from vector-based tools like Inkscape and Adobe Illustrator. This workflow enables:</p>
+                            <ul>
+                                <li><strong>Automated Template Conversion</strong> – Transforms user-created SVG templates into structured Unity prefabs, supporting automated data population through XML and JSON.</li>
+                                <li><strong>Multi-Document Batch Processing</strong> – Streamlines large-scale dataset generation by automating document creation, reducing manual effort while improving efficiency.</li>
+                                <li><strong>Complex Table Generation</strong> – Designed a table system supporting multi-row and multi-column structures, enabling the recreation of invoices, purchase orders, and government forms with realistic variations.</li>
+                                <li><strong>Scalability for Large Datasets</strong> – Enhances dataset scalability by ensuring consistent document generation across multiple formats and styles.</li>
+                            </ul>
+                        </article>	
+                        <article>
+                            <a class="image fit"><img src="images/complex_table_example_inkscape.png" alt="" /></a>
+                            <a class="image fit"><img src="images/complex_table_example.png" alt="" /></a>
                         </article>			
+                       
                     </section>                   
             </div>
 
